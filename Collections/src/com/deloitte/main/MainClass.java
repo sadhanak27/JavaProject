@@ -30,7 +30,13 @@ public class MainClass {
 		point2.setX(7);
 		point2.setY(9);
 		System.out.println(point2.getX() + " " +point2.getY());
+		Point point3 = new Point();
+		point3.setX(4.5);
+		Double x = (Double)point3.getX();
 		
+		System.out.println(x);
+				
+				
 
 	}
 
