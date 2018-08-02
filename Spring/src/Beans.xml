@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="pointBean" class="com.deloitte.pojo.Point" scope="prototype">
+   <property name="X" value="4"/>
+   <property name="Y" value="8"/>
+   </bean>
+   
+   <bean id="helloWorld" class="com.deloitte.pojo.HelloWorld">
+   <property name="message1" value="First"/>
+   <property name="message2" value="Second"/>
+   </bean>
+   
+   <bean id="helloIndia" class="com.deloitte.pojo.HelloIndia" parent="helloWorld">
+   <property name="message1" value="Hello!"/>
+   <property name="message3" value="Namaste!"/>
+   </bean>
+   
+</beans>   

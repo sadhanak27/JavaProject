@@ -5,6 +5,10 @@ public class Point {
 	private int X;
 	private int Y;
 	
+	public Point() {
+		System.out.println("Point instatiated");
+	}
+	
 	
 	public int getX() {
 		return X;
@@ -13,10 +17,13 @@ public class Point {
 		return Y;
 	}
 	public void setX(int x) {
-		X = x;
+		this.X = x;
+		System.out.println("SetX");
+		
 	}
 	public void setY(int y) {
-		Y = y;
+		this.Y = y;
+		System.out.println("SetY");
 	}
 	
 	@Override
